@@ -1,0 +1,95 @@
+/* Contenedor principal */
+.user-list-container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #e6f3ff, #f8fdff);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 90, 160, 0.15);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Título */
+.user-list-container h2 {
+    color: #004e92;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #00b4ff;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* Tarjeta individual */
+.user-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 100, 180, 0.1);
+    transition: all 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 100, 180, 0.2);
+}
+
+/* Nombre del usuario */
+.user-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #003c75;
+}
+
+/* Acciones */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Botones */
+.btn {
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+/* Colores según acción */
+.btn.edit {
+    background-color: #007bff;
+}
+
+.btn.delete {
+    background-color: #e63946;
+}
+
+.btn.view {
+    background-color: #00b894;
+}
+
+/* Efectos hover */
+.btn:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .user-card {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .actions {
+        justify-content: center;
+    }
+}

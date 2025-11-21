@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Registro de Productos</h2>
+
+    <form #registroForm="ngForm" (ngSubmit)="guardarEmpleado()">
+
+        <label for="name">name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="Productos.name" required>
+        <label for="Description">Description</label>
+        <input type="text" id="Description" name="Description" [(ngModel)]="Productos.Description" required>
+        <label for="Valor">Valor</label>
+        <input type="number" id="Valor" name="Valor" [(ngModel)]="Productos.Valor" min="0" max="80" required>
+
+        <button type="submit">Registrar</button>
+    </form>
+</div>

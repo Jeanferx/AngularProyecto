@@ -1,0 +1,13 @@
+<div class="user-list-container">
+    <h2>Lista de Usuarios</h2>
+
+    <div class="user-card" *ngFor="let productos of Productos">
+        <span class="user-name">{{ productos.name }}</span>
+
+        <div class="actions">
+            <button class="btn edit">Editar</button>
+            <button class="btn delete" (click)="eliminarUsuario(productos)">Eliminar</button>
+            <button class="btn view" (click)="leerUsuario(productos)">Leer</button>
+        </div>
+    </div>
+</div>
